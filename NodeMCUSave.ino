@@ -24,16 +24,16 @@ Diubahsuai oleh:
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "FsC2h0fahRJ1DdNDLTPe8JiQVejlIP4D";
+char auth[] = "AUTH TOKEN BLYNK"; // SILA TUKAR KEPADA AUTH TOKEN ANDA
 
-const char apikey[]   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im16YWtpYWIiLCJyZWFkX3dyaXRlIjp0cnVlLCJpYXQiOjE1OTEwNzYxMTl9.OD9p6fHj9_wVtW_9cKu0oALVI3MK9aPW3onp5jtdI5k";  // replace with your Favoriot Device Access Token
+const char apikey[]   = "Favoriot apikey";  // SILA TUKAR KEPADA FAVORIOT APIKEY ANDA
 FavoriotHTTPS favoriot;
 unsigned long previousMillis = 0;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "NOKCURIWIFIKO";
-char pass[] = "ingatfreeko";
+char ssid[] = "SSID ANDA"; // SILA TUKAR KEPADA WIFI ID ANDA
+char pass[] = "PASSWORD WIFI ANDA"; // SILA TUKAR KEPADA PASSWORD WIFI ANDA
 
 int pinDHT11 = D6;
 SimpleDHT11 dht11(pinDHT11);
@@ -89,7 +89,7 @@ void loop()
  // Nota: 10,000 = 1 saat, 60,000 = 1 minit
 
     // STEP 3 - Send data to Favoriot Data Stream
-    favoriot.deviceId("pi@mzakiab");
+    favoriot.deviceId("DEVICE ID ANDA"); // SILA TUKAR KEPADA DEVICE ID ANDA
     favoriot.dataStream("suhu", String(temperature));
     favoriot.dataStream("kelembapan", String(humidity));
     // add other dataStream as you wish
@@ -103,7 +103,8 @@ void loop()
 
   HTTPClient http; 
 
-  http.begin("http://api.thingspeak.com/update?api_key=RP1EMA5DTI5IKBM6&field1=" + String(temperature) + "&field2=" + String(humidity));
+  http.begin("http://api.thingspeak.com/update?api_key=API KEY THING SPEAK ANDA&field1=" + String(temperature) + "&field2=" + String(humidity));
+      // SILA TUKAR API KEY THING SPEAK ANDA
 
 int httpCode = http.GET();
 
