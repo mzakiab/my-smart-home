@@ -8,3 +8,13 @@ dan voice melalui Google Assistant dan BLYNK.
 Selain daripada itu, projek ini juga menghantar boleh membaca data suhu dan kelembapan dalam rumah dengan menggunakan sensor DHT11. Data-data
 tersebut akan dihantar dan disimpan dalan dalam IoT Platform Favoriot dan ThinkSpeak.
 
+Senarai peralatan:
+
+a. ESP8266 NodeMCU
+b. DHT11 sensor
+c. 2 Relay module
+d. UNO board (hanya untuk mendapatkan bekalan kuasa 5v)
+e. Bread board 
+f. Jamper wayer
+g. LED
+h. Perintang
