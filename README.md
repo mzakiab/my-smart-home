@@ -10,11 +10,11 @@ tersebut akan dihantar dan disimpan dalan dalam IoT Platform Favoriot dan ThinkS
 
 Senarai peralatan:
 
-a. ESP8266 NodeMCU
-b. DHT11 sensor
-c. 2 Relay module
-d. UNO board (hanya untuk mendapatkan bekalan kuasa 5v)
-e. Bread board 
-f. Jamper wayer
-g. LED
-h. Perintang
+a. ESP8266 NodeMCU <br>
+b. DHT11 sensor <br>
+c. 2 Relay module <br>
+d. UNO board (hanya untuk mendapatkan bekalan kuasa 5v sahaja) <br>
+e. Bread board <br>
+f. Jamper wayer <br>
+g. LED <br>
+h. Perintang <br>
